@@ -88,6 +88,7 @@
     <orderEntry type="library" name="Maven: com.sun.mail:javax.mail:1.6.2" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.microsoft.sqlserver:mssql-jdbc:7.4.1.jre8" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.oracle:ojdbc8:12.2.0.1">
         <CLASSES>

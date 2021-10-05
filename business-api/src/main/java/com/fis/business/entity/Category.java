@@ -1,24 +1,22 @@
 package com.fis.business.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @Entity
-@Table(name = "CATEGORY")
-public class Category {
+@Table(name = "Category")
+public class Category implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
     String id;
-
-    @Column(name = "NAME")
     String name;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "category")
     List<Product> products;
+
 }
