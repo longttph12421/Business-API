@@ -13,6 +13,7 @@ import java.util.List;
 public class Category implements Serializable {
     @Id
     String id;
+    @Column(columnDefinition = "nvarchar(100)")
     String name;
 
     @JsonIgnore
