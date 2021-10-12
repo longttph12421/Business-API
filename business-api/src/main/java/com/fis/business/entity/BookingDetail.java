@@ -18,7 +18,7 @@ public class BookingDetail {
     String status;
     @ManyToOne
     @JoinColumn(name = "service_id")
-    Service service;
+    ServiceCustomer serviceCustomer;
     @ManyToOne
     @JoinColumn(name="booking_id")
     Booking booking;

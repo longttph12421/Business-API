@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "Services")
-public class Service {
+public class ServiceCustomer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
@@ -22,7 +22,7 @@ public class Service {
     String price;
     String photo;
     String time_examination;
-    @OneToMany(mappedBy = "service")
+    @OneToMany(mappedBy = "serviceCustomer")
     List<BookingDetail> bookingDetails;
 
 }

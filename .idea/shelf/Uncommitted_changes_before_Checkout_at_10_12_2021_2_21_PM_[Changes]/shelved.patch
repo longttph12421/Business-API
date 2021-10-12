@@ -1,0 +1,146 @@
+Index: business-api/src/main/java/com/fis/business/entity/Service.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/business-api/src/main/java/com/fis/business/entity/Service.java b/business-api/src/main/java/com/fis/business/entity/ServiceCustomer.java
+rename from business-api/src/main/java/com/fis/business/entity/Service.java
+rename to business-api/src/main/java/com/fis/business/entity/ServiceCustomer.java
+--- a/business-api/src/main/java/com/fis/business/entity/Service.java	(revision df5c183318dd8eaa8bc68ef392b5164d6edd07b6)
++++ b/business-api/src/main/java/com/fis/business/entity/ServiceCustomer.java	(date 1634023240393)
+@@ -14,7 +14,7 @@
+ @AllArgsConstructor
+ @Entity
+ @Table(name = "Services")
+-public class Service {
++public class ServiceCustomer {
+     @Id
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
+     Integer id;
+@@ -22,7 +22,7 @@
+     String price;
+     String photo;
+     String time_examination;
+-    @OneToMany(mappedBy = "service")
++    @OneToMany(mappedBy = "serviceCustomer")
+     List<BookingDetail> bookingDetails;
+ 
+ }
+Index: business-api/src/main/java/com/fis/business/entity/BookingDetail.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fis.business.entity;\r\n\r\nimport lombok.Data;\r\n\r\nimport javax.persistence.*;\r\nimport java.util.Date;\r\n\r\n@Data\r\n@Entity\r\n@Table(name = \"Booking_Details\")\r\npublic class BookingDetail {\r\n    @Id\r\n    String bookingid;\r\n    Date time_start;\r\n    Date time_end;\r\n    String address;\r\n    String note;\r\n    String status;\r\n    @ManyToOne\r\n    @JoinColumn(name = \"service_id\")\r\n    Service service;\r\n    @ManyToOne\r\n    @JoinColumn(name=\"booking_id\")\r\n    Booking booking;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/business-api/src/main/java/com/fis/business/entity/BookingDetail.java b/business-api/src/main/java/com/fis/business/entity/BookingDetail.java
+--- a/business-api/src/main/java/com/fis/business/entity/BookingDetail.java	(revision df5c183318dd8eaa8bc68ef392b5164d6edd07b6)
++++ b/business-api/src/main/java/com/fis/business/entity/BookingDetail.java	(date 1634023240414)
+@@ -18,7 +18,7 @@
+     String status;
+     @ManyToOne
+     @JoinColumn(name = "service_id")
+-    Service service;
++    ServiceCustomer serviceCustomer;
+     @ManyToOne
+     @JoinColumn(name="booking_id")
+     Booking booking;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f0eb97f6-1512-4689-9f05-cb164e85e249\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/business-api/src/main/java/com/fis/business/config/Constants.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"JpbToolWindowState\">\r\n    <option name=\"myId2FirstActivated\">\r\n      <map>\r\n        <entry key=\"JPA Inspector\" value=\"true\" />\r\n        <entry key=\"JPA Palette\" value=\"true\" />\r\n        <entry key=\"JPA Structure\" value=\"true\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"myId2Visible\">\r\n      <map>\r\n        <entry key=\"JPA Inspector\" value=\"false\" />\r\n        <entry key=\"JPA Palette\" value=\"false\" />\r\n        <entry key=\"JPA Structure\" value=\"false\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"MacroExpansionManager\">\r\n    <option name=\"directoryName\" value=\"bpysxtl6\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1ydMV8GysKCrr1fSmQMTu9wYoXD\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"flattenModules\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showExcludedFiles\" value=\"false\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DatabaseDriversLRU\" value=\"sqlserver\" />\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/C/com.ASSJ6\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.44942528\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settings.project.maven.repository.indices\" />\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"configurationTypes\">\r\n      <set>\r\n        <option value=\"SpringBootApplicationConfigurationType\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"BusinessApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"business-api\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.fis.business.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.fis.business.BusinessApplication\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"SHORTEN_COMMAND_LINE\" value=\"NONE\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f0eb97f6-1512-4689-9f05-cb164e85e249\" name=\"Changes\" comment=\"\" />\r\n      <created>1632577037781</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1632577037781</updated>\r\n      <workItem from=\"1632577040803\" duration=\"62000\" />\r\n      <workItem from=\"1632577133401\" duration=\"2765000\" />\r\n      <workItem from=\"1632656378581\" duration=\"677000\" />\r\n      <workItem from=\"1632712537354\" duration=\"1613000\" />\r\n      <workItem from=\"1632717437382\" duration=\"209000\" />\r\n      <workItem from=\"1632717703864\" duration=\"1179000\" />\r\n      <workItem from=\"1632730903774\" duration=\"1466000\" />\r\n      <workItem from=\"1632733961906\" duration=\"1632000\" />\r\n      <workItem from=\"1632749610018\" duration=\"1920000\" />\r\n      <workItem from=\"1632751717990\" duration=\"371000\" />\r\n      <workItem from=\"1632752156297\" duration=\"468000\" />\r\n      <workItem from=\"1632752677894\" duration=\"8276000\" />\r\n      <workItem from=\"1632790987813\" duration=\"5431000\" />\r\n      <workItem from=\"1632824814357\" duration=\"1092000\" />\r\n      <workItem from=\"1632879458304\" duration=\"2344000\" />\r\n      <workItem from=\"1632985227444\" duration=\"2150000\" />\r\n      <workItem from=\"1633008485391\" duration=\"2462000\" />\r\n      <workItem from=\"1633095536899\" duration=\"350000\" />\r\n      <workItem from=\"1633421370714\" duration=\"2872000\" />\r\n      <workItem from=\"1633428571541\" duration=\"522000\" />\r\n      <workItem from=\"1633484260877\" duration=\"1172000\" />\r\n      <workItem from=\"1633486309918\" duration=\"997000\" />\r\n      <workItem from=\"1633487344009\" duration=\"22504000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"false\" />\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"org.springframework.beans.factory.NoSuchBeanDefinitionException\" package=\"org.springframework.beans.factory\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision df5c183318dd8eaa8bc68ef392b5164d6edd07b6)
++++ b/.idea/workspace.xml	(date 1634023240349)
+@@ -4,7 +4,39 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="" />
++    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="Changes">
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Booking.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/BookingDetail.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Customer.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/OrdelDetail.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Order.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/ReBooking.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Role.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Service.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Staf.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Time.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/User.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Authority.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Booking.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/BookingDetail.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Calender.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Customer.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/OrderDetail.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Orders.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/ReBooking.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Role.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Service.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Staff.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Time.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Users.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/business-api/business-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/business-api.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Category.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Product.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Category.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Product.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/fis-core/fis-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fis-core/fis-core.iml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -17,6 +49,9 @@
+         <option value="Class" />
+       </list>
+     </option>
++  </component>
++  <component name="Git.Rebase.Settings">
++    <option name="NEW_BASE" value="origin/Dũng" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+@@ -74,6 +109,9 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="aspect.path.notification.shown" value="true" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+     <property name="last_opened_file_path" value="$USER_HOME$/C/com.ASSJ6" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+@@ -92,6 +130,17 @@
+     </option>
+   </component>
+   <component name="RunManager">
++    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
++      <option name="arquillianRunConfiguration">
++        <value>
++          <option name="containerStateName" value="" />
++        </value>
++      </option>
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="BusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+       <module name="business-api" />
+       <extension name="coverage">
+@@ -137,6 +186,9 @@
+       <workItem from="1633421370714" duration="2872000" />
+       <workItem from="1633428571541" duration="522000" />
+       <workItem from="1633484260877" duration="1172000" />
++      <workItem from="1633486130033" duration="16000" />
++      <workItem from="1633486181497" duration="1124000" />
++      <workItem from="1633487433689" duration="2886000" />
+       <workItem from="1633486309918" duration="997000" />
+       <workItem from="1633487344009" duration="22504000" />
+     </task>

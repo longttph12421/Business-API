@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="" />
+    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/AuthorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/ServiceCustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/AuthorityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/ServiceCustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/AuthorityDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/RoleDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/ServiceCustomerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/AuthorityRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/RoleRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/ServiceCustomerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/AuthorityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/ServiceCustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/AuthorityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/ServiceCustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/BookingDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/BookingDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/ServiceCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/BookingDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/BookingDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Service.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Dũng" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,6 +118,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="business-api" />
       <extension name="coverage">
