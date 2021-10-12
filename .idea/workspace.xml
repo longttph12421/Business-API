@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/AppParamController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/AppParamDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/AppParamDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/AppParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/AppParamRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/AppParamService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/AppParamServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/AppParamController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/dao/AppParamDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/dao/impl/AppParamDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/AppParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/AppParamRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/service/AppParamService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/service/impl/AppParamServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +70,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
