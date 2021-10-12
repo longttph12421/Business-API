@@ -1,5 +1,6 @@
 package com.fis.business.entity;
 
+<<<<<<< HEAD
 import lombok.Data;
 
 import javax.persistence.*;
@@ -22,4 +23,7 @@ public class BookingDetail {
     @ManyToOne
     @JoinColumn(name="booking_id")
     Booking booking;
+=======
+public class BookingDetail {
+>>>>>>> 38ed01fd083728af239e1a2dbc234d57f58b0c5b
 }

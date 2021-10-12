@@ -1,5 +1,6 @@
 package com.fis.business.entity;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
@@ -26,4 +27,7 @@ public class Customer {
     @JsonIgnore
     @OneToMany(mappedBy = "customer")
     List<Orders> orders;
+=======
+public class Customer {
+>>>>>>> 38ed01fd083728af239e1a2dbc234d57f58b0c5b
 }

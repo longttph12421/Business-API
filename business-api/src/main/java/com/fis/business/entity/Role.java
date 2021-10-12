@@ -1,5 +1,6 @@
 package com.fis.business.entity;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,4 +28,7 @@ public class Role {
     @OneToMany(mappedBy = "role")
     List<Authority> authorities;
 
+=======
+public class Role {
+>>>>>>> 38ed01fd083728af239e1a2dbc234d57f58b0c5b
 }

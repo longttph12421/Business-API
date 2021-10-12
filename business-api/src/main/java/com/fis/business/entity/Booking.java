@@ -2,6 +2,7 @@ package com.fis.business.entity;
 
 import lombok.Data;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -27,4 +28,17 @@ public class Booking {
     List<BookingDetail> bookingDetails;
 
 
+=======
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Data
+@Entity
+@Table(name = "Booking")
+public class Booking implements Serializable {
+    @Id
+    Integer id;
+>>>>>>> 38ed01fd083728af239e1a2dbc234d57f58b0c5b
 }
