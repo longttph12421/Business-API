@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDaoIpml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDetailDaoIpml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingDetalRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/BookingDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingDetailSerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceIpml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
