@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/rest/product")
 public class ProductController extends GenericController<Product, Integer> {
     @Autowired

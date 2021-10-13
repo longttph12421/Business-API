@@ -20,21 +20,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class CategoryController extends GenericController<Category, String> {
     @Autowired
     CategoryService categoryService;
-    @RequestMapping(value = {"/getAllCategory"}, method = RequestMethod.GET)
-    @PreAuthorize("@appAuthorizer.authorize(authentication, '" + CoreConstants.PRIVILEGE.VIEW + "', this)")
-    public @ResponseBody
-    ResponseEntity<?> getAll() {
-        long startTime = System.currentTimeMillis();
-        LogUtil.showLog(logger, LogUtil.LOG_BEGIN, "getProductList", startTime);
-        MessagesResponse msg = new MessagesResponse();
-        try {
-            msg.setData(categoryService.findAll());
-        } catch (Exception ex) {
-            logger.error(ex.getMessage(), ex);
-            throw ex;
-        } finally {
-            LogUtil.showLog(logger, LogUtil.LOG_END, "getProductList", startTime);
-        }
-        return new ResponseEntity<>(msg, HttpStatus.OK);
-    }
+//    @RequestMapping(value = {"/getAllCategory"}, method = RequestMethod.GET)
+//    @PreAuthorize("@appAuthorizer.authorize(authentication, '" + CoreConstants.PRIVILEGE.VIEW + "', this)")
+//    public @ResponseBody
+//    ResponseEntity<?> getAll() {
+//        long startTime = System.currentTimeMillis();
+//        LogUtil.showLog(logger, LogUtil.LOG_BEGIN, "getProductList", startTime);
+//        MessagesResponse msg = new MessagesResponse();
+//        try {
+//            msg.setData(categoryService.findAll());
+//        } catch (Exception ex) {
+//            logger.error(ex.getMessage(), ex);
+//            throw ex;
+//        } finally {
+//            LogUtil.showLog(logger, LogUtil.LOG_END, "getProductList", startTime);
+//        }
+//        return new ResponseEntity<>(msg, HttpStatus.OK);
+//    }
+
 }
