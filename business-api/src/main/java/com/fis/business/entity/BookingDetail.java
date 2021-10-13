@@ -1,5 +1,7 @@
 package com.fis.business.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fis.business.config.Constants;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -11,14 +13,16 @@ import java.util.Date;
 public class BookingDetail {
     @Id
     String bookingid;
+    @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
     Date time_start;
+    @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
     Date time_end;
     String address;
     String note;
     String status;
     @ManyToOne
     @JoinColumn(name = "service_id")
-    Service service;
+    ServiceCustomer serviceCustomer;
     @ManyToOne
     @JoinColumn(name="booking_id")
     Booking booking;

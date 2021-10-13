@@ -6,9 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "Authoritys", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"Username", "Roleid"})
-})
+@Table(name = "Authoritys")
 public class Authority  {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)

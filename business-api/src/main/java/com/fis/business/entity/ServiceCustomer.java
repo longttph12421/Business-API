@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Services")
-public class Service {
+@Table(name = "ServiceCustomer")
+public class ServiceCustomer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
@@ -22,7 +22,7 @@ public class Service {
     String price;
     String photo;
     String time_examination;
-    @OneToMany(mappedBy = "service")
+    @OneToMany(mappedBy = "serviceCustomer")
     List<BookingDetail> bookingDetails;
 
 }
