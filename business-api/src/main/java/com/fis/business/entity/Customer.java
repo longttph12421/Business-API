@@ -18,11 +18,16 @@ public class Customer {
     String fullname;
     String adress;
     Long phone;
+
+    @JsonIgnore
     @OneToOne()
     @JoinColumn(name = "username")
     Users user;
+
+    @JsonIgnore
     @OneToMany(mappedBy ="customer")
     List<Booking> bookings;
+
     @JsonIgnore
     @OneToMany(mappedBy = "customer")
     List<Orders> orders;

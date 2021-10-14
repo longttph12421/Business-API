@@ -23,9 +23,11 @@ public class OrderDetail {
     String images;
     String address;
     String status;
+
     @ManyToOne
     @JoinColumn(name = "order_id")
     Orders orders;
+
     @ManyToOne
     @JoinColumn(name = "Product_id")
     Product product;

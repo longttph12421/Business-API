@@ -16,12 +16,16 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
+
     @ManyToOne
     @JoinColumn(name = "id_customer")
     Customer customer;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
     Date create_date;
+
     String status;
+
     @JsonIgnore
     @OneToMany(mappedBy = "orders")
     List<OrderDetail> orderDetails;

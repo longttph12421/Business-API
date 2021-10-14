@@ -20,11 +20,14 @@ public class Users {
     @Column(name = "Username")
     String Username;
     String password;
+
     @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     List<Authority> authorities;
+
     @OneToOne(mappedBy = "user")
     Staff staff;
+
     @OneToOne(mappedBy = "user")
     Customer customer;
 

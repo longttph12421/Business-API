@@ -1,5 +1,6 @@
 package com.fis.business.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,11 +26,14 @@ public class Staff {
     String adress;
     Long phone;
     String photo;
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "username")
     Users user;
-   @OneToMany(mappedBy = "staff")
+    @JsonIgnore
+    @OneToMany(mappedBy = "staff")
     List<Calender> calenders;
-   @OneToMany(mappedBy = "staff")
+    @JsonIgnore
+    @OneToMany(mappedBy = "staff")
     List<Booking> bookings;
 }

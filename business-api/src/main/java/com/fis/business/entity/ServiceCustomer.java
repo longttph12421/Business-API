@@ -1,5 +1,6 @@
 package com.fis.business.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public class ServiceCustomer {
     String price;
     String photo;
     String time_examination;
+    @JsonIgnore
     @OneToMany(mappedBy = "serviceCustomer")
     List<BookingDetail> bookingDetails;
 

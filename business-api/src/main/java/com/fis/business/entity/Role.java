@@ -17,12 +17,15 @@ import java.util.List;
 @Table(name = "Roles")
 public class Role {
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     Integer id;
+
     @Column(name = "NAME")
     String role;
+
     @JsonIgnore
     @OneToMany(mappedBy = "role")
     List<Authority> authorities;
