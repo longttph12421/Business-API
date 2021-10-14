@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "Category")
+@Table(name = "Categorys")
 public class Category implements Serializable {
     @Id
     String id;

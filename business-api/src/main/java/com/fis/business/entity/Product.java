@@ -1,9 +1,11 @@
 package com.fis.business.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -29,5 +31,8 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "CATEGORYID")
     Category category;
+    @JsonIgnore
+    @OneToMany(mappedBy = "product")
+    List<OrderDetail> orderDetails;
 
 }
