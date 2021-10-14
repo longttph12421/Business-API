@@ -19,7 +19,8 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     Integer id;
-    @Column(name = "NAME")
+
+    @Column(name = "NAME", columnDefinition = "nvarchar(100)")
     String name;
     @Column(name = "PRICE")
     float price;
@@ -29,6 +30,7 @@ public class Product {
     @Column(name = "QUANTITY")
     int Quantity;
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "CATEGORYID")
     Category category;
     @JsonIgnore
