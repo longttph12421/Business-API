@@ -11,38 +11,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2021_2_25_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2021_2_25_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/BookingDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/BookingDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/BookingDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingDetalRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingDetalRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/StaffRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/StaffRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDetailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDaoIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDetailDaoIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDetailDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingDetalRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/repo/BookingDetailRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/BookingDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/BookingDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/BookingDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/BookingDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingDetailSerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingDetailSerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ServiceCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/ServiceCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/dao/CategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/BookingDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/BookingDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/entity/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/BookingDetalRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/BookingDetalRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/StaffRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/StaffRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/repo/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/target/classes/com/fis/business/service/impl/BookingServiceIpml.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +97,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.44942528" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fis.business.controller" />
+      <recent name="com.fis.business.service.impl" />
+      <recent name="com.fis.business.service" />
+      <recent name="com.fis.business.dao.impl" />
+      <recent name="com.fis.business.dao" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">

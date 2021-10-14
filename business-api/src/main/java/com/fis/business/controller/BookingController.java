@@ -10,5 +10,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/rest/Booking")
 public class BookingController extends GenericController<Booking,Integer> {
-
 }
