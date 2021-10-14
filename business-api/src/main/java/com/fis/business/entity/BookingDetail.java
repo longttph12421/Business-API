@@ -12,7 +12,7 @@ import java.util.Date;
 @Table(name = "Booking_Details")
 public class BookingDetail {
     @Id
-    String bookingid;
+    Integer bookingid;
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
     Date time_start;
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)

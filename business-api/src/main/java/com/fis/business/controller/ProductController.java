@@ -17,14 +17,12 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
-@CrossOrigin("*")
 @RequestMapping("/rest/product")
 public class ProductController extends GenericController<Product, Integer> {
     @Autowired
     ProductService productService;
 
     @RequestMapping(value = {"/getProductList"}, method = RequestMethod.POST)
-    @PreAuthorize("@appAuthorizer.authorize(authentication, '" + CoreConstants.PRIVILEGE.VIEW + "', this)")
     public @ResponseBody
     ResponseEntity<?> getProductList(@RequestBody Map map) {
         long startTime = System.currentTimeMillis();

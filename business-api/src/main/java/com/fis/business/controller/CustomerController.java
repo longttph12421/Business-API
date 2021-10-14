@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "*")
 @RestController
-@CrossOrigin("*")
 @RequestMapping("/rest/customer")
-public class CustomerController extends GenericController<Customer,Integer> {
-    @Autowired
-    CustomerService customerService;
+public class CustomerController extends GenericController<Customer, Integer> {
+
 }
