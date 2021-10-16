@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/rest/Booking")
-public class BookingController extends GenericController<Booking,Integer> {
+public class BookingController extends GenericController<Booking, Integer> {
 }
