@@ -12,18 +12,25 @@ import java.util.Date;
 @Table(name = "Booking_Details")
 public class BookingDetail {
     @Id
-    Integer bookingid;
+    private Integer bookingid;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_start;
+    private Date time_start;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_end;
-    String address;
-    String note;
-    String status;
+    private Date time_end;
+
+    private String address;
+
+    private String note;
+
+    private String status;
+
     @ManyToOne
     @JoinColumn(name = "service_id")
-    ServiceCustomer serviceCustomer;
+    private ServiceCustomer serviceCustomer;
+
     @ManyToOne
     @JoinColumn(name="booking_id")
-    Booking booking;
+    private Booking booking;
 }

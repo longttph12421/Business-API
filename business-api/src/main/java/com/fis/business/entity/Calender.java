@@ -19,18 +19,24 @@ import java.util.Date;
 public class Calender {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    private Integer id;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date date_work = new Date();
+    private Date date_work = new Date();
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date shif_1;
+    private Date shif_1;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date shif_2;
+    private Date shif_2;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date shif_3;
+    private Date shif_3;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date Time_work;
+    private Date Time_work;
+
     @ManyToOne
     @JoinColumn(name = "id_staff",insertable = false,updatable = false)
-    Staff staff;
+    private Staff staff;
 }

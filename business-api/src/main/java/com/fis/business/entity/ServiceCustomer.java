@@ -18,13 +18,18 @@ import java.util.List;
 public class ServiceCustomer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-    String name;
-    String price;
-    String photo;
-    String time_examination;
+    private Integer id;
+
+    private String name;
+
+    private String price;
+
+    private String photo;
+
+    private String time_examination;
+
     @JsonIgnore
     @OneToMany(mappedBy = "serviceCustomer")
-    List<BookingDetail> bookingDetails;
+    private List<BookingDetail> bookingDetails;
 
 }

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/rest/Category")
+@RequestMapping("/rest/category")
 public class CategoryController extends GenericController<Category, String> {
     @Autowired
     CategoryService categoryService;

@@ -10,10 +10,12 @@ import javax.persistence.*;
 public class Authority  {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        Integer id;
+        private Integer id;
+
         @ManyToOne
         @JoinColumn(name = "Username")
         private Users user;
+
         @ManyToOne
         @JoinColumn(name = "Roleid")
         private Role role;

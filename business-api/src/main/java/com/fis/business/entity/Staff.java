@@ -18,22 +18,31 @@ import java.util.List;
 public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-    String work_experience;
-    String level;
-    String skills;
-    String fullname;
-    String adress;
-    Long phone;
-    String photo;
-    @JsonIgnore
+    private Integer id;
+
+    private String work_experience;
+
+    private String level;
+
+    private String skills;
+
+    private String fullname;
+
+    private String adress;
+
+    private Long phone;
+
+    private String photo;
+
     @OneToOne
     @JoinColumn(name = "username")
-    Users user;
+    private Users user;
+
     @JsonIgnore
     @OneToMany(mappedBy = "staff")
-    List<Calender> calenders;
+    private List<Calender> calenders;
+
     @JsonIgnore
     @OneToMany(mappedBy = "staff")
-    List<Booking> bookings;
+    private List<Booking> bookings;
 }

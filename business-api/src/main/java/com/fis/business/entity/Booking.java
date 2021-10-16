@@ -13,25 +13,25 @@ import java.util.List;
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-    String status;
+    private Integer id;
+    private String status;
 
     @ManyToOne
     @JoinColumn(name = "id_customer")
-    Customer customer;
+    private Customer customer;
 
     @ManyToOne
     @JoinColumn(name = "id_staff")
-    Staff staff;
+    private Staff staff;
 
     @JsonIgnore
     @OneToOne
     @JoinColumn(name = "id_time",insertable = false,updatable = false)
-    Time time;
+    private Time time;
 
     @JsonIgnore
     @OneToMany(mappedBy = "booking")
-    List<BookingDetail> bookingDetails;
+    private List<BookingDetail> bookingDetails;
 
 
 }

@@ -15,18 +15,18 @@ import java.util.List;
 public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "id_customer")
-    Customer customer;
+    private Customer customer;
 
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date create_date;
+    private Date create_date;
 
-    String status;
+    private String status;
 
     @JsonIgnore
     @OneToMany(mappedBy = "orders")
-    List<OrderDetail> orderDetails;
+    private List<OrderDetail> orderDetails;
 }

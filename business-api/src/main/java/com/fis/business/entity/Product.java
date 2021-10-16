@@ -21,27 +21,27 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
-    Integer id;
+    private Integer id;
 
     @Column(name = "NAME", columnDefinition = "nvarchar(100)")
-    String name;
+    private String name;
 
     @Column(name = "PRICE")
-    float price;
+    private float price;
 
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
     @Column(name = "CREATEDATE")
-    Date CreateDate = new Date();
+    private Date CreateDate = new Date();
 
     @Column(name = "QUANTITY")
-    int Quantity;
+    private int Quantity;
 
     @ManyToOne
     @JoinColumn(name = "CATEGORYID")
-    Category category;
+    private Category category;
 
     @JsonIgnore
     @OneToMany(mappedBy = "product")
-    List<OrderDetail> orderDetails;
+    private List<OrderDetail> orderDetails;
 
 }

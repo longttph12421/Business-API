@@ -20,19 +20,19 @@ import java.util.Date;
 @Table(name = "Re_Bookings")
 public class ReBooking {
     @Id
-    String id_booking;
+    private String id_booking;
 
-    String id_service;
-
-    @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date booking_date;
+    private String id_service;
 
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_start;
+    private Date booking_date;
 
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_end;
+    private Date time_start;
 
-    String status;
+    @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
+    private Date time_end;
+
+    private String status;
 
 }

@@ -12,12 +12,13 @@ import java.util.List;
 @Table(name = "Categorys")
 public class Category implements Serializable {
     @Id
-    String id;
+    private String id;
+
     @Column(columnDefinition = "nvarchar(100)")
-    String name;
+    private String name;
 
     @JsonIgnore
     @OneToMany(mappedBy = "category")
-    List<Product> products;
+    private List<Product> products;
 
 }

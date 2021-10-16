@@ -21,14 +21,19 @@ import java.util.Timer;
 public class Time {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    private Integer id;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date date;
+    private Date date;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_start;
+    private Date time_start;
+
     @JsonFormat(pattern = Constants.DATE_FORMAT.DATE_TIME)
-    Date time_end;
-    String status;
+    private Date time_end;
+
+    private String status;
+
     @OneToOne(mappedBy = "time")
-    Booking booking;
+    private Booking booking;
 }

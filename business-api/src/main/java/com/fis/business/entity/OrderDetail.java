@@ -17,19 +17,25 @@ public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    String name;
-    float price;
-    int quantity;
-    String images;
-    String address;
-    String status;
+
+    private String name;
+
+    private float price;
+
+    private int quantity;
+
+    private String images;
+
+    private String address;
+
+    private String status;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
-    Orders orders;
+    private Orders orders;
 
     @ManyToOne
     @JoinColumn(name = "Product_id")
-    Product product;
+    private Product product;
 
 }

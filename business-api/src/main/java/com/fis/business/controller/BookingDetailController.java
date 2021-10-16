@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/rest/BookingDetail")
+@RequestMapping("/rest/bookingDetail")
 public class BookingDetailController extends GenericController<BookingDetail,Integer> {
 }

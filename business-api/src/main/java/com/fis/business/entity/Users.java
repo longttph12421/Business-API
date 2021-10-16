@@ -18,17 +18,18 @@ import java.util.List;
 public class Users {
     @Id
     @Column(name = "Username")
-    String Username;
-    String password;
+    private String Username;
+
+    private String password;
 
     @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-    List<Authority> authorities;
+    private List<Authority> authorities;
 
     @OneToOne(mappedBy = "user")
-    Staff staff;
+    private Staff staff;
 
     @OneToOne(mappedBy = "user")
-    Customer customer;
+    private Customer customer;
 
 }

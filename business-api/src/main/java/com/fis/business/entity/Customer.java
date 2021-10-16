@@ -12,23 +12,28 @@ import java.util.List;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-    String email;
-    String photo;
-    String fullname;
-    String adress;
-    Long phone;
+    private Integer id;
+
+    private String email;
+
+    private String photo;
+
+    private String fullname;
+
+    private String adress;
+
+    private Long phone;
 
     @JsonIgnore
     @OneToOne()
     @JoinColumn(name = "username")
-    Users user;
+    private Users user;
 
     @JsonIgnore
     @OneToMany(mappedBy ="customer")
-    List<Booking> bookings;
+    private List<Booking> bookings;
 
     @JsonIgnore
     @OneToMany(mappedBy = "customer")
-    List<Orders> orders;
+    private List<Orders> orders;
 }
