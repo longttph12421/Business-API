@@ -21,10 +21,7 @@ import javax.validation.Valid;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Author: PhucVM
- * Date: 22/10/2019
- */
+
 
 public class GenericController<E, P extends Serializable> {
     protected final Logger logger = LoggerFactory.getLogger(getClass());

@@ -1,11 +1,21 @@
 package com.fis.business.service.impl;
 
 import com.fis.business.entity.Booking;
+import com.fis.business.repo.BookingRepo;
 import com.fis.business.service.BookingService;
 import com.fis.fw.common.generics.impl.GenericServiceImpl;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 @Service
 public class BookingServiceImpl extends GenericServiceImpl<Booking, Integer> implements BookingService {
+
+    @Override
+    public Booking booking(Map map) {
+
+        //return ((BookingRepo) getRepository()).save(map);
+        return null;
+    }
 }
