@@ -28,6 +28,6 @@ public class Role {
 
     @JsonIgnore
     @OneToMany(mappedBy = "role")
-    List<Authority> authorities;
+    List<Users> users;
 
 }

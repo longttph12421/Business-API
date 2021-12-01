@@ -22,9 +22,12 @@ public class Users {
 
     private String password;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-    private List<Authority> authorities;
+    //    @JsonIgnore
+//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+//    private List<Authority> authorities;
+    @ManyToOne
+    @JoinColumn(name = "Roleid")
+    private Role role;
 
     @OneToOne(mappedBy = "user")
     private Staff staff;
