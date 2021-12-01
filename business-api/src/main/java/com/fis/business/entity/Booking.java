@@ -14,7 +14,6 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     private String status;
 
     @ManyToOne
@@ -25,10 +24,10 @@ public class Booking {
     @JoinColumn(name = "id_staff")
     private Staff staff;
 
-    @JsonIgnore
-    @OneToOne
-    @JoinColumn(name = "id_time",insertable = false,updatable = false)
-    private Time time;
+//    @JsonIgnore
+//    @OneToOne
+//    @JoinColumn(name = "id_time",insertable = false,updatable = false)
+//    private Time time;
 
     @JsonIgnore
     @OneToMany(mappedBy = "booking")

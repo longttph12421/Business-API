@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/BookingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/dao/impl/BookingDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-api/src/main/java/com/fis/business/service/impl/BookingServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="f0eb97f6-1512-4689-9f05-cb164e85e249" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -61,7 +55,7 @@
     <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1ydMV8GysKCrr1fSmQMTu9wYoXD" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -89,7 +83,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.44942528" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -167,15 +161,15 @@
       <workItem from="1634279989667" duration="656000" />
       <workItem from="1634281349733" duration="3263000" />
       <workItem from="1634366003457" duration="7264000" />
-      <workItem from="1634989871662" duration="988000" />
-      <workItem from="1634991346035" duration="70000" />
-      <workItem from="1634991448770" duration="308000" />
-      <workItem from="1635559059577" duration="1429000" />
-      <workItem from="1636537630370" duration="118000" />
-      <workItem from="1636800577943" duration="5694000" />
-      <workItem from="1636983396634" duration="832000" />
-      <workItem from="1637115388433" duration="2579000" />
-      <workItem from="1637123686836" duration="3497000" />
+      <workItem from="1637051208896" duration="1789000" />
+      <workItem from="1637053898883" duration="908000" />
+      <workItem from="1637152751686" duration="2950000" />
+      <workItem from="1637503023036" duration="1772000" />
+      <workItem from="1637913599480" duration="2419000" />
+      <workItem from="1638029158279" duration="716000" />
+      <workItem from="1638111054122" duration="83000" />
+      <workItem from="1638111196044" duration="351000" />
+      <workItem from="1638111757617" duration="432000" />
     </task>
     <servers />
   </component>

@@ -35,5 +35,5 @@ public class Time {
     private String status;
 
     @OneToOne(mappedBy = "time")
-    private Booking booking;
+    private BookingDetail bookingDetail;
 }

@@ -1,6 +1,7 @@
 package com.fis.business.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fis.business.config.Constants;
 import lombok.Data;
 
@@ -25,6 +26,10 @@ public class BookingDetail {
     private String note;
 
     private String status;
+    @JsonIgnore
+    @OneToOne
+    @JoinColumn(name = "id_time",insertable = false,updatable = false)
+    private Time time;
 
     @ManyToOne
     @JoinColumn(name = "service_id")

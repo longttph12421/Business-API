@@ -33,7 +33,7 @@ public class Staff {
     private Long phone;
 
     private String photo;
-
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "username")
     private Users user;
